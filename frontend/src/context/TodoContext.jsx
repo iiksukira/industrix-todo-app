@@ -10,7 +10,7 @@ export const TodoProvider = ({ children }) => {
   const [pagination, setPagination] = useState({
     current_page: 1,
     per_page: 10,
-    total_pages: 1,
+    total_pages: 3,
   });
 
   const fetchTodos = async (page = 1, query = "", limit = 5) => {

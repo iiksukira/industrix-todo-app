@@ -68,20 +68,40 @@ const TodoForm = ({ open, onClose, editTodo }) => {
             <Input.TextArea placeholder="Enter description" rows={4} />
           </Form.Item>
         </Col>
-        <Col xs={24} sm={12}>
-          <Form.Item name="priority" label="Priority">
-            <Select>
-              <Select.Option value="high">High</Select.Option>
-              <Select.Option value="medium">Medium</Select.Option>
-              <Select.Option value="low">Low</Select.Option>
-            </Select>
-          </Form.Item>
-        </Col>
-        <Col xs={24} sm={12}>
-          <Form.Item>
-            <Button type="primary" htmlType="submit" loading={loading} block>
-              {editTodo ? "Update" : "Add"}
-            </Button>
+        <Col xs={24}>
+          <Form.Item label="Priority" style={{ marginBottom: 0 }}>
+            <Row gutter={[8, 8]}>
+              <Col xs={16} sm={18}>
+                <Form.Item
+                  name="priority"
+                  noStyle
+                  rules={[
+                    { required: true, message: "Please select priority" },
+                  ]}
+                >
+                  <Select
+                    placeholder="Select priority"
+                    style={{ width: "100%", height: 40 }}
+                    options={[
+                      { value: "high", label: "High" },
+                      { value: "medium", label: "Medium" },
+                      { value: "low", label: "Low" },
+                    ]}
+                  />
+                </Form.Item>
+              </Col>
+              <Col xs={8} sm={6}>
+                <Button
+                  type="primary"
+                  htmlType="submit"
+                  loading={loading}
+                  block
+                  style={{ height: 40 }}
+                >
+                  {editTodo ? "Update" : "Add"}
+                </Button>
+              </Col>
+            </Row>
           </Form.Item>
         </Col>
       </Row>

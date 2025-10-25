@@ -110,7 +110,6 @@ const TodoList = () => {
 
   return (
     <>
-      {/* 🔹 Top Controls Responsive */}
       <Row
         gutter={[16, 16]}
         style={{ marginBottom: 16 }}
@@ -139,11 +138,9 @@ const TodoList = () => {
             }}
             style={{ width: "100%" }}
             options={[
-              { value: 5, label: "Show 5" },
               { value: 10, label: "Show 10" },
               { value: 20, label: "Show 20" },
               { value: 50, label: "Show 50" },
-              { value: 100, label: "Show 100" },
               { value: 1000, label: "Show All" },
             ]}
           />
