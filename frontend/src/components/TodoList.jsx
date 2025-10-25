@@ -90,10 +90,10 @@ const TodoList = () => {
               setOpenForm(true);
             }}
           >
-            Edit
+            View More & Edit
           </Button>
           <Button type="link" onClick={() => handleToggle(record.id)}>
-            Toggle
+            Mark
           </Button>
           <Popconfirm
             title="Delete this todo?"
