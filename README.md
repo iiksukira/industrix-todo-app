@@ -33,6 +33,9 @@ A full-stack todo list web application built for the Industrix Full Stack Engine
 
 ```bash
 git clone https://github.com/iiksukira/industrix-todo-app.git
+```
+
+```bash
 cd industrix-todo-app
 ```
 
