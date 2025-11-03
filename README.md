@@ -1,5 +1,3 @@
-# Sales Data Visualization 📊
-
 ## 📌 Project Title
 
 Industrix Todo App
