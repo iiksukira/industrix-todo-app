@@ -41,12 +41,20 @@ cd industrix-todo-app
 
 2. Run with Docker
 
-`bash sudo docker compose up --build `
+```bash
+sudo docker compose up --build
+```
 
 3. Access the app
 
-App runs on `http://localhost:5173`  
-API runs on `http://localhost:5000`
+App runs on
+```bash
+http://localhost:5173
+```  
+API runs on
+```bash
+http://localhost:5000
+```
 
 ## 📘 API Documentation
 
